@@ -14,9 +14,12 @@ Expected Results:function WorldTravel () {
                             this.Places = {};
                   }
 
-Test:
-Code:
-Expected Results:
+Test: It will add Places to WorldTravel.
+Code: worldTravel.addPlace(paris)
+Expected Results: WorldTravel{
+Paris
+}
+
 
 Test:
 Code:

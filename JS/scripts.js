@@ -1,14 +1,20 @@
+//Business Logic for WorldTravel ----
 function WorldTravel() {
-    this.Place = {};
+    this.places = {};
 }
 
-function Place(location, landmarks, season) {
+WorldTravel.prototype.addPlace = function(place) {
+    this.places[place.location] = place;
+};
+
+//Business Logic for Places ----
+function Places(location, landmarks, season) {
   this.location = location;
   this.landmarks = landmarks;
   this.season = season;
 }
 
-Place.prototype.locationMessage = function() {
+Places.prototype.locationMessage = function() {
   return "I have been to " + this.location;
 };
 
