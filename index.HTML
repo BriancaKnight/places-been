@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Places I've Been</title>
+  <script src="JS/scripts.js"></script>
+</head>
+<body>
+    <h1>Places I've Been</h1>
+    <form id="new-place">
+        <lable for="newLocation">Location</lable>
+        <input id="newLocation" name="newLocation" type="text">
+        <lable for="newLandmarks">Landmark</lable>
+        <input id="newLandmarks" name="newLandmarks" type="text">
+        <lable for="newSeason">Season</lable>
+        <input id="newSeason" name="newSeason" type="text">
+        <br />
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Locations</h2>
+    <div id="places"> 
+    </div>
+
+    <div id="place-details" class="hidden">
+        <p>Location: <span id="location"></span></p>
+        <p>Landmarks: <span id="landmarks"></span></p>
+        <p>Season: <span id="season"></span></p>
+    </div>
+  
+</body>
+</html>

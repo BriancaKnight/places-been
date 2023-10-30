@@ -14,6 +14,13 @@ WorldTravel.prototype.assignId = function() {
   return this.currentId;
 };
 
+WorldTravel.prototype.findPlace = function(id) {
+  if (this.places[id] !== undefined) {
+    return this.places[id];
+  }
+  return false;
+};
+
 //Business Logic for Places ----
 function Places(location, landmarks, season) {
   this.location = location;
@@ -24,3 +31,15 @@ function Places(location, landmarks, season) {
 Places.prototype.locationMessage = function() {
   return "I have been to " + this.location + ", there we saw the " + this.landmarks + " during " + this.season;
 }
+
+//UI Logic
+let worldTravel = new WorldTravel();
+
+function handelFormSubmission(event) {
+  event.preventDefault();
+
+}
+
+window.addEventListener("load", function (){
+
+});
