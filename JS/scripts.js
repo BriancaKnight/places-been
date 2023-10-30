@@ -1,5 +1,10 @@
-function Place(location, landmarks, timeOfYear) {
+function Place(location, landmarks, season) {
   this.location = location;
   this.landmarks = landmarks;
-  this.timeOfYear = timeOfYear;
+  this.season = season;
 }
+
+Place.prototype.locationMessage = function() {
+  return "I have been to " + this.location;
+};
+
