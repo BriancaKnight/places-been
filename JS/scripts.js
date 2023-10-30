@@ -15,6 +15,6 @@ function Places(location, landmarks, season) {
 }
 
 Places.prototype.locationMessage = function() {
-  return "I have been to " + this.location;
+  return "I have been to " + this.location + ", there we saw the " + this.landmarks + " during " + this.season;
 };
 
