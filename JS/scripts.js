@@ -1,3 +1,7 @@
+function WorldTravel() {
+    this.Place = {};
+}
+
 function Place(location, landmarks, season) {
   this.location = location;
   this.landmarks = landmarks;
